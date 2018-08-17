@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: 116.85.32.90
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      direct:
+        acknowledge-mode: manual   # 配置该消费者的ack方式为手动
+  devtools:
+    restart:
+      enabled: false #
+server:
+  port: 91
